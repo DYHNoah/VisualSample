@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->fileButton, &QPushButton::clicked, this,[this](){
         QString fileName = QFileDialog::getOpenFileName(this, "选择文件", "./");
 
-        ui->lineEdit->setText(fileName);
+        ui->file_lineEdit->setText(fileName);
     });
 }
 
